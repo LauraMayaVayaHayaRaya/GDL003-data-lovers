@@ -5,7 +5,6 @@ const example = () => {
   return 'example';
 };
 
-
 const filtrado =() => {
   return 'filtrado';
 };
@@ -14,3 +13,4 @@ window.filtrado = {
   filtrado,
   example
 }; 
+
