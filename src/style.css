@@ -1,6 +1,14 @@
+header{
+    background-color: black
+}
+h1{
+    color: white
+}
+
 #footer{
   background-color: black;
   bottom: 0;
   position: fixed;
   width: 100%;
 }
+

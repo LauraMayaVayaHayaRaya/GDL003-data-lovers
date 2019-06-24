@@ -5,10 +5,8 @@ describe('example', () => {
   it('is a function', () => {
     expect(typeof example.example).toBe('function');
   });
-
   it('returns `example`', () => {
-    expect(example.example()).toBe('example');
-});
+    expect(filtrado.example()).toBe('example');
   });
 
   describe('filtrado', () => {
@@ -20,3 +18,16 @@ describe('example', () => {
       expect(example.filtrado()).toBe('filtrado');
 });
 });
+
+describe ('filtrado', () => {
+  it('is a function', () => {
+    expect(typeof filtrado).toBe('object');
+  });
+
+  it('returns `filtrado`', () => {
+    expect(filtrado.filtrado()).toBe('filtrado');
+  });
+
+});
+
+  
