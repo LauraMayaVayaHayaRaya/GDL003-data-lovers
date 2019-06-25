@@ -1,11 +1,6 @@
-header{
-	background-color: black;
-}
-h1{
-	color: white;
-	font-family:'B612 Mono', monospace; font-size: 35px;
-}
+
 footer{
+
   background-color: black;
   background-image: url(img/footerIMG.png);
   background-repeat: no-repeat;
@@ -14,6 +9,14 @@ footer{
   position: fixed;
   width: 100%;
 }
+header{
+	background-color: black;
+}
+h1{
+	color: white;
+	font-family:'B612 Mono', monospace; font-size: 35px;
+}
+
 .logo,.slogan{
 	display: inline-block;
 }
