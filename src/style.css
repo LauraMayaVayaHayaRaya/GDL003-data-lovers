@@ -1,16 +1,22 @@
+
+footer{
+
+  background-color: black;
+  background-image: url(img/footerIMG.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  line-height: 6;
+  position: fixed;
+  width: 100%;
+}
 header{
 	background-color: black;
 }
 h1{
 	color: white;
 	font-family:'B612 Mono', monospace; font-size: 35px;
-}
-footer{
-  background-color: black;
-  bottom: 0;
-  position: fixed;
-  width: 100%;
-}
+}  
+  
 .logo,.slogan{
 	display: inline-block;
 }
@@ -34,3 +40,7 @@ form{
 }
 
 
+footer section{
+  color: white;
+  text-align: center;
+}
