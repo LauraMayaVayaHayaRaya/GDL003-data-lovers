@@ -1,14 +1,32 @@
-header{
-    background-color: black
-}
-h1{
-    color: white
+* {
+margin: 0;
+padding: 0;
+
 }
 
-#footer{
+body {
   background-color: black;
-  bottom: 0;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  min-height: 100vh;
+  flex-wrap: wrap;
+}
+
+
+
+footer{
+  align-self: flex-end;
+  background-color: black;
+  background-image: url(img/footerIMG.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  line-height: 6;
   position: fixed;
   width: 100%;
 }
 
+footer section{
+  color: white;
+  text-align: center;
+}
