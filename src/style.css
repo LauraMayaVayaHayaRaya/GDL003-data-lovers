@@ -1,14 +1,36 @@
 header{
-    background-color: black
+	background-color: black;
 }
 h1{
-    color: white
+	color: white;
+	font-family:'B612 Mono', monospace; font-size: 35px;
 }
-
-#footer{
+footer{
   background-color: black;
   bottom: 0;
   position: fixed;
   width: 100%;
 }
+.logo,.slogan{
+	display: inline-block;
+}
+.header1{
+	display: inline-block;
+	width: 70%;
+}
+.header2{
+	display: inline-block;
+	width: 10%;
+}
+body{
+	background-color: black;
+	font-family: 'B612 Mono', monospace;
+}
+form{
+	display: inline-block; margin-left: 100%;
+}
+.species,.genders,.origins{
+	display: inline-block;
+}
+
 
