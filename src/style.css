@@ -12,6 +12,7 @@ footer{
   width: 100%;
 }
 header{
+  /*display: block;*/
 	background-color: black;
 }
 h1{
@@ -78,7 +79,7 @@ color: #5EE31F;
 .header2 img{
 	margin-left: 50px;
 }
-.search input{ 
+.search input{
 	margin-left: 50px;
 }
 footer section{
