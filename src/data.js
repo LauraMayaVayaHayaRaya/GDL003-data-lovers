@@ -13,5 +13,4 @@ const filtrado =() => {
 window.filtrado = {
   filtrado,
   example
-}; 
-
+};
