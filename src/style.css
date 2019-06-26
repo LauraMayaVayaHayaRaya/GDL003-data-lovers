@@ -1,12 +1,14 @@
 
 footer{
+
   align-self: flex-end;
+
+
   background-color: black;
   background-image: url(img/footerIMG.png);
   background-repeat: no-repeat;
   background-size: cover;
   line-height: 6;
-  position: fixed;
   width: 100%;
 }
 header{
@@ -26,7 +28,15 @@ h1{
 }
 .header2{
 	display: inline-block;
-	width: 10%;
+	width: 25%
+}
+.menu{
+	display: inline-block;
+	width: 70%;
+}
+.search{
+	display: inline-block;
+	width: 25%;
 }
 body{
 	background-color: black;
@@ -37,14 +47,40 @@ body{
   min-height: 100vh;
   flex-wrap: wrap;
 }
-form{
-	display: inline-block; margin-left: 100%;
+.category{
+	display: inline-block; align-content: center;
+	width: 350px;
 }
-.species,.genders,.origins{
-	display: inline-block;
+.category a{
+	display: block;
+font-style: normal;
+font-weight: normal;
+font-size: 48px;
+line-height: 78px;
+text-decoration: none;
+
+color: #5EE31F;
+}
+.category img{
+	display: block;
+	width: 100%;
 }
 
-
+.categories{
+	margin-top: 60px;
+	margin-bottom: 150px;
+	margin-left: auto;
+	margin-right: auto;
+	background: rgba(76, 250, 198, 0.3);
+	text-align: center;
+	padding-bottom: 100px;
+}
+.header2 img{
+	margin-left: 50px;
+}
+.search input{ 
+	margin-left: 50px;
+}
 footer section{
   color: white;
   text-align: center;
