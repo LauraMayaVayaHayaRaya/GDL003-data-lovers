@@ -1,5 +1,9 @@
 
 footer{
+
+  align-self: flex-end;
+
+
   background-color: black;
   background-image: url(img/footerIMG.png);
   background-repeat: no-repeat;
@@ -37,6 +41,11 @@ h1{
 body{
 	background-color: black;
 	font-family: 'B612 Mono', monospace;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  min-height: 100vh;
+  flex-wrap: wrap;
 }
 .category{
 	display: inline-block; align-content: center;
