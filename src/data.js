@@ -3,7 +3,7 @@
 
 const showData = () => {
   
-  return 'example';
+  
 };
 
 const filtrado =() => {
