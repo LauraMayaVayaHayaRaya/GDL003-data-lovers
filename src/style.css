@@ -1,16 +1,5 @@
 
-footer{
 
-  align-self: flex-end;
-
-
-  background-color: black;
-  background-image: url(img/footerIMG.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  line-height: 6;
-  width: 100%;
-}
 header{
   /*display: block;*/
 	background-color: black;
@@ -81,6 +70,18 @@ color: #5EE31F;
 }
 .search input{
 	margin-left: 50px;
+}
+
+
+footer{
+  align-self: flex-end;
+  background-color: black;
+  background-image: url(img/footerIMG.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: block;
+  line-height: 6;
+  width: 100%;
 }
 footer section{
   color: white;
