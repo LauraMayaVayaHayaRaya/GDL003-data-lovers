@@ -1,7 +1,5 @@
-
-
 header{
-  /*display: block;*/
+  display: block;
 	background-color: black;
 }
 h1{
@@ -33,9 +31,9 @@ body{
 	font-family: 'B612 Mono', monospace;
   margin: 0;
   padding: 0;
-  display: flex;
+  /*display: flex;*/
   min-height: 100vh;
-  flex-wrap: wrap;
+  /*flex-wrap: wrap;*/
 }
 .category{
 	display: inline-block; align-content: center;
@@ -86,4 +84,15 @@ footer{
 footer section{
   color: white;
   text-align: center;
+}
+.items{
+	width: 70%;
+	display: inline-block;
+}
+.info{
+	width: 25%;
+	display: inline-block;
+}
+#result{
+	display: none;
 }
