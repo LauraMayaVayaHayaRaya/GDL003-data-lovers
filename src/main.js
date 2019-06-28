@@ -1,6 +1,6 @@
 const showList=()=>{
   document.getElementById("categories").style.display="none";
-  let charactersApi = "https://rickandmortyapi.com/api/character/";
+  let charactersApi = "https://rickandmortyapi.com/api/character/";//buscar funcion que se aplique en las 25 pag//
 let request = new XMLHttpRequest();
 
 //se hace console.log para corroborar que la variable request es object
