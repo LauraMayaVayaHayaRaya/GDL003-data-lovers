@@ -17,7 +17,7 @@
     </header>
     <nav>
       <section class="menu">
-        <button type="button"><img src="img/home-icon.png" width="20px" alt="Home"></button>
+        <button id="homeButton" type="button"><img src="img/home-icon.png" width="20px" alt="Home"></button>
         <!--<a href="#">Home</a>-->
         <!--<a href="#">Characters</a>-->
       </section>
@@ -46,17 +46,41 @@
       <section class="info">
         <h2>CHARACTERS</h2>
         <p>There are 394 characters</p> 
+        <section class="checkboxes">
+          <h2>FILTER BY</h2>
+          <input type="checkbox" name="Species" value="1">Human
+          <br>
+          <input type="checkbox" name="Species" value="2">Alien
+          <br>
+          <input type="checkbox" name="Species" value="3">Humanoid
+          <br>
+          <input type="checkbox" name="Species" value="4">Robot
+          <br>
+          <input type="checkbox" name="Species" value="5">Animal
+          <br>
+          <input type="checkbox" name="Species" value="5">Vampire
+          <br>
+          <input type="checkbox" name="Species" value="5">Cronemberg
+          <br>
+          <input type="checkbox" name="Species" value="5">Parasite
+          <br>
+          <input type="checkbox" name="Species" value="5">Disease
+          <br>
+          <input type="checkbox" name="Species" value="5">Mytholog
+          <br>
+          <input type="checkbox" name="Species" value="5">Poopybutthole
+          <br>
+          <input type="checkbox" name="Species" value="5">Unknown
+          <br>
+          <h2>SORT BY</h2>
+          <button type="button" id="sortAsc">A-Z</button>
+          <button type="button" id="sortDesc">Z-A</button>
+        </section>
       </section>
-      <section class="items">
-          
-
-        
-
+      <section id="resultItems" class="items">        
       </section>
-
-
     </section>
-
+    
 
 
     <footer>

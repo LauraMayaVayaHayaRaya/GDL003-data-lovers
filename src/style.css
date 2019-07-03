@@ -88,8 +88,13 @@ footer section{
 .info{
 	width: 25%;
 	display: inline-block;
+	vertical-align: top;
+	text-align: left;
 }
 #result{
 	display: none;
+}
+.checkboxes{
+	color: white;
 }
 
