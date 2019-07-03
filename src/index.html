@@ -4,18 +4,6 @@
     <meta charset="utf-8">
     <title>Data Lovers</title>
     <link rel="stylesheet" href="style.css" />
-
-<!barra de navegación de w3schools>
-    <aside id="mySidenav" class="sidenav">
-      <a href="#" class="closebtn" onclick="closeNav()">&times;</a>
-      <a href="#">About</a>
-      <a href="#">Services</a>
-      <a href="#">Clients</a>
-      <a href="#">Contact</a>
-    </aside>
-
-
-
   </head>
   <body>
     <header>
@@ -29,7 +17,9 @@
     </header>
     <nav>
       <section class="menu">
-        <a href="#">Home</a>
+        <button id="homeButton" type="button"><img src="img/home-icon.png" width="20px" alt="Home"></button>
+        <!--<a href="#">Home</a>-->
+        <!--<a href="#">Characters</a>-->
       </section>
       <form class="search">
         <input type="text" name="search" id="searchBox" required >
@@ -42,35 +32,57 @@
         <a href="#characters">CHARACTERS</a>
         <img src="img/species-main.png">
       </section>
-      <section  class="category"> <!--Asignar ID segun la categoria que elijamos-->
-          <a href="#genders">GENDERS</a>
+      <section id="locations" class="category"> <!--Asignar ID segun la categoria que elijamos-->
+          <a href="#locations">LOCATIONS</a>
           <img src="img/genders-main.png">
       </section>
       <section class="category"> <!--Asignar ID segun la categoria que elijamos-->
-          <a href="#origins">ORIGINS</a>
+          <a href="#episodes">EPISODES</a>
           <img src="img/origins-main.png">
 
       </section>
     </section>
 
     <section id="result" class="categories">
-
+    <section> class="info" 
         <h2>CHARACTERS</h2>
-        <p>There are 394 characters</p>
-          <section id="sideNavigationMenu">
 
-          </section>
-
-      <section class="items">
-
-
-
-
+        <p>There are 394 characters</p> 
+        <section class="checkboxes">
+          <h2>FILTER BY</h2>
+          <input type="checkbox" name="Species" value="1">Human
+          <br>
+          <input type="checkbox" name="Species" value="2">Alien
+          <br>
+          <input type="checkbox" name="Species" value="3">Humanoid
+          <br>
+          <input type="checkbox" name="Species" value="4">Robot
+          <br>
+          <input type="checkbox" name="Species" value="5">Animal
+          <br>
+          <input type="checkbox" name="Species" value="5">Vampire
+          <br>
+          <input type="checkbox" name="Species" value="5">Cronemberg
+          <br>
+          <input type="checkbox" name="Species" value="5">Parasite
+          <br>
+          <input type="checkbox" name="Species" value="5">Disease
+          <br>
+          <input type="checkbox" name="Species" value="5">Mytholog
+          <br>
+          <input type="checkbox" name="Species" value="5">Poopybutthole
+          <br>
+          <input type="checkbox" name="Species" value="5">Unknown
+          <br>
+          <h2>SORT BY</h2>
+          <button type="button" id="sortAsc">A-Z</button>
+          <button type="button" id="sortDesc">Z-A</button>
+        </section>
       </section>
-
-<p id="shururu"> </p>
+      <section id="resultItems" class="items">        
+      </section>
     </section>
-
+    
 
 
     <footer>

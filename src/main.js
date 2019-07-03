@@ -1,3 +1,68 @@
+const showList=(results=false)=>{
+  console.log(results)
+  if(results){
+    RICKANDMORTY.results=results
+  }
+  document.getElementById("categories").style.display="none";
+  
+document.getElementById("resultItems").innerHTML=''
+  Object.keys(RICKANDMORTY.results).forEach(function(item){
+    let character=RICKANDMORTY.results[item];
+    let htmlElement=document.createElement('section');
+    htmlElement.className='category';
+    htmlElement.innerHTML='<a href="#genders">'+character.name+'</a><img src="'+character.image+'">';
+    document.getElementById("resultItems").appendChild(htmlElement);  
+  });
+  document.getElementById("result").style.display="block";
+};
+document.getElementById("characters").addEventListener("click", function(){showList()});
+
+const showHome=()=>{
+  document.getElementById("result").style.display="none";
+  document.getElementById("categories").style.display="block";
+};
+document.getElementById("homeButton").addEventListener("click", showHome);
+
+const sortList=(order='asc')=>{
+  RICKANDMORTY.results.sort(sort('name',order));
+  showList(RICKANDMORTY.results);
+}
+document.getElementById('sortAsc').addEventListener('click',function(){sortList()});
+document.getElementById('sortDesc').addEventListener('click',function(){sortList('desc')});
+
+
+/*
+let url = "https://rickandmortyapi.com/api/";
+let i = 0;
+
+
+  let urlCharacter = url += "character/?page=" + i + " ";
+    console.log(urlCharacter);
+  const showList=()=>{
+    document.getElementById("categories").style.display="none";
+
+    fetch (urlCharacter)
+    .then(rawApi => {
+      console.log(url);
+      return rawApi.json();
+      })
+    .then(showApi => {
+      console.log(showApi)
+      Object.keys(showApi.results).forEach(function(item){
+        let character=showApi.results[item];
+        let section=document.createElement('section');
+        section.className='category';
+        section.innerHTML='<a href="#genders">'+character.name+'</a><img src="'+character.image+'">';
+        document.getElementById("result").appendChild(section);
+      });
+    });
+
+
+    document.getElementById("result").style.display="block";
+}
+  document.getElementById("characters").addEventListener("click", showList);
+*/
+
 /* FUNCIÓN CON JSON
 const showList=()=>{
   document.getElementById("categories").style.display="none";
@@ -48,48 +113,6 @@ const showList=()=>{
 };
   document.getElementById("characters").addEventListener("click", showList);
 //llamada a caja de input
-  document.getElementById("searchButton").addEventListener("click", searchBoxFunction);
-
-
-const charactersTags =()=>{
-  let status =
-
+  document.getElementById("searchButton").addEventListener("click", searchBoxFunction)
 }
-
-
-
-
-
-
-
-/*
-let url = "https://rickandmortyapi.com/api/";
-let i = 0;
-
-
-  let urlCharacter = url += "character/?page=" + i + " ";
-    console.log(urlCharacter);
-  const showList=()=>{
-    document.getElementById("categories").style.display="none";
-
-    fetch (urlCharacter)
-    .then(rawApi => {
-      console.log(url);
-      return rawApi.json();
-      })
-    .then(showApi => {
-      console.log(showApi)
-      Object.keys(showApi.results).forEach(function(item){
-        let character=showApi.results[item];
-        let section=document.createElement('section');
-        section.className='category';
-        section.innerHTML='<a href="#genders">'+character.name+'</a><img src="'+character.image+'">';
-        document.getElementById("result").appendChild(section);
-      });
-    });
-
-
-    document.getElementById("result").style.display="block";
-}
-  document.getElementById("characters").addEventListener("click", showList);
 */
