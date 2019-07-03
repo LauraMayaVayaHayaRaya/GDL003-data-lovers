@@ -4,6 +4,18 @@
     <meta charset="utf-8">
     <title>Data Lovers</title>
     <link rel="stylesheet" href="style.css" />
+
+<!barra de navegación de w3schools>
+    <aside id="mySidenav" class="sidenav">
+      <a href="#" class="closebtn" onclick="closeNav()">&times;</a>
+      <a href="#">About</a>
+      <a href="#">Services</a>
+      <a href="#">Clients</a>
+      <a href="#">Contact</a>
+    </aside>
+
+
+
   </head>
   <body>
     <header>
@@ -20,8 +32,8 @@
         <a href="#">Home</a>
       </section>
       <form class="search">
-        <input type="text" name="search">
-        <button type="button"><img src="img/search-logo.png" width="20px" alt="Search"></button>
+        <input type="text" name="search" id="searchBox" required >
+        <button type="button" id="searchButton"><img src="img/search-logo.png" width="20px" alt="Search"></button>
       </form>
     </nav>
 
@@ -40,19 +52,23 @@
 
       </section>
     </section>
+
     <section id="result" class="categories">
-      <section class="info">
+
         <h2>CHARACTERS</h2>
-        <p>There are 394 characters</p> 
-      </section>
+        <p>There are 394 characters</p>
+          <section id="sideNavigationMenu">
+
+          </section>
+
       <section class="items">
-          
 
-        
+
+
 
       </section>
 
-
+<p id="shururu"> </p>
     </section>
 
 
