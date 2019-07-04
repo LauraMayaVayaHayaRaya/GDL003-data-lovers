@@ -4,29 +4,35 @@ const showList=(results=false)=>{
     RICKANDMORTY.results=results
   }
   document.getElementById("categories").style.display="none";
-  
+
 document.getElementById("resultItems").innerHTML=''
   Object.keys(RICKANDMORTY.results).forEach(function(item){
     let character=RICKANDMORTY.results[item];
+    console.log(RICKANDMORTY.results);
     let htmlElement=document.createElement('section');
     htmlElement.className='category';
+
     htmlElement.innerHTML='<a href="#characters">'+character.name+'</a><img src="'+character.image+'">';
     document.getElementById("resultItems").appendChild(htmlElement);  
+
   });
   document.getElementById("result").style.display="block";
 };
 document.getElementById("characters").addEventListener("click", function(){showList()});
 
+
 const showHome=()=>{
   document.getElementById("result").style.display="none";
   document.getElementById("categories").style.display="block";
 };
+
 document.getElementById("homeButton").addEventListener("click", showHome);
 
 const sortList=(order='asc')=>{
   RICKANDMORTY.results.sort(sort('name',order));
   showList(RICKANDMORTY.results);
-}
+};
+
 document.getElementById('sortAsc').addEventListener('click',function(){sortList()});
 document.getElementById('sortDesc').addEventListener('click',function(){sortList('desc')});
 
@@ -36,6 +42,68 @@ document.getElementById('sortDesc').addEventListener('click',function(){sortList
   RICKANDMORTY.results.filter(filter('species',));
   showList(RICKANDMORTY.results);
 }*/
+
+
+
+
+
+
+//*/INTENTO DE ACTIVACIÓN RADIOBUTTONS  CON SUBMIT
+  const filterData = () => {
+    let radioForm = document.getElementById("filterFormHtml");
+    radioForm.addEventListener("submit", function(event) {
+      //  let checked = document.getElementsByTagName("radio")
+      let data = new FormData(radioForm);
+
+      let radioValue = "";
+      for (const entry of data) {
+        radioValue = entry[1];
+      };
+      
+      console.log(radioValue);
+      event.preventDefault();
+    }, false);
+
+  }
+  document.getElementById("filterButton").addEventListener("click", filterData);
+
+/*
+      let character=RICKANDMORTY.results.character;
+      console.log(character);
+
+      let filtering = (character, radioValue) => {
+        return character.filter(radioValue);
+        };
+
+        console.log(filtering(RICKANDMORTY.character, radioValue));
+*/
+    /*  const filtering = (array, radioValue) => {
+        return (RICKANDMORTY).filter(radioValue);
+        };
+        */
+
+
+
+
+/*
+const filterData = ()=> {
+  let filterForm = document.forms["filterFormHtml"];
+  let buttonsSelected = "";
+  let i;
+    for(i=0; i<filterForm.length; i++){
+        if(filterForm[i].checked) {
+        buttonsSelected = buttonsSelected + filterForm[i].value + " ";
+        console.log(buttonsSelected);
+      };
+    };
+};
+*/
+
+
+//document.getElementByClassName("radioButtonsSpecies").addEventListener("click", filterData);
+
+
+
 
 
 
