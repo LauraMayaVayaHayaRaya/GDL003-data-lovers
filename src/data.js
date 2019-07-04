@@ -27,14 +27,14 @@ const sort = (key, order='asc') => {
 
 };
 
+const filterData = ()=>{
 
-
-//  return 'filterData';
-};
 }
 
+//  return 'filterData';
 
-window.filtrado =filtrado
+
+//window.filterData =filterData
 window.sort=sort
 
 
