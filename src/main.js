@@ -11,8 +11,10 @@ document.getElementById("resultItems").innerHTML=''
     console.log(RICKANDMORTY.results);
     let htmlElement=document.createElement('section');
     htmlElement.className='category';
-    htmlElement.innerHTML='<a href="#genders">'+character.name+'</a><img src="'+character.image+'">';
-    document.getElementById("resultItems").appendChild(htmlElement);
+
+    htmlElement.innerHTML='<a href="#characters">'+character.name+'</a><img src="'+character.image+'">';
+    document.getElementById("resultItems").appendChild(htmlElement);  
+
   });
   document.getElementById("result").style.display="block";
 };
@@ -33,6 +35,16 @@ const sortList=(order='asc')=>{
 
 document.getElementById('sortAsc').addEventListener('click',function(){sortList()});
 document.getElementById('sortDesc').addEventListener('click',function(){sortList('desc')});
+
+//FILTRADO DE CATEGORIAS
+
+/*const filterData=()=>{
+  RICKANDMORTY.results.filter(filter('species',));
+  showList(RICKANDMORTY.results);
+}*/
+
+
+
 
 
 

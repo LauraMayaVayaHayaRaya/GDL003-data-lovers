@@ -24,8 +24,5 @@ const sort = (key, order='asc') => {
       (comparison * -1) : comparison
     );
   };
-};
 
-
-//window.filtrado =filtrado
 window.sort=sort

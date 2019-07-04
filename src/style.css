@@ -97,4 +97,5 @@ footer section{
 .radioButtons{
 	color: white;
   display:block;
+	text-align: left;
 }
