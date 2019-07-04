@@ -22,7 +22,7 @@
         <!--<a href="#">Characters</a>-->
       </section>
       <form class="search">
-        <input type="text" name="search" id="searchBox" required >
+        <input type="search" name="search" id="searchBox" required >
         <button type="button" id="searchButton"><img src="img/search-logo.png" width="20px" alt="Search"></button>
       </form>
     </nav>
@@ -44,45 +44,79 @@
     </section>
 
     <section id="result" class="categories">
-    <section> class="info" 
+    <section class="info">
         <h2>CHARACTERS</h2>
 
-        <p>There are 394 characters</p> 
-        <section class="checkboxes">
+        <p>There are 394 characters</p>
+        <section class="radioButtons" name="radioButtons">
+        <form id="filterFormHtml" autocomplete="off">
+
+
           <h2>FILTER BY</h2>
-          <input type="checkbox" name="Species" value="1">Human
+
+          <h4 id="radioButtonsSpecies">SPECIES</h4>
+          <input type="radio" name="species" value="human">Human
           <br>
-          <input type="checkbox" name="Species" value="2">Alien
+          <input type="radio" name="species" value="alien">Alien
           <br>
-          <input type="checkbox" name="Species" value="3">Humanoid
+          <input type="radio" name="species" value="humanoid">Humanoid
           <br>
-          <input type="checkbox" name="Species" value="4">Robot
+          <input type="radio" name="species" value="robot">Robot
           <br>
-          <input type="checkbox" name="Species" value="5">Animal
+          <input type="radio" name="species" value="animal">Animal
           <br>
-          <input type="checkbox" name="Species" value="5">Vampire
+          <input type="radio" name="species" value="vampire">Vampire
           <br>
-          <input type="checkbox" name="Species" value="5">Cronemberg
+          <input type="radio" name="species" value="cronemberg">Cronemberg
           <br>
-          <input type="checkbox" name="Species" value="5">Parasite
+          <input type="radio" name="species" value="parasite">Parasite
           <br>
-          <input type="checkbox" name="Species" value="5">Disease
+          <input type="radio" name="species" value="disease">Disease
           <br>
-          <input type="checkbox" name="Species" value="5">Mytholog
+          <input type="radio" name="species" value="mytholog">Mytholog
           <br>
-          <input type="checkbox" name="Species" value="5">Poopybutthole
+          <input type="radio" name="species" value="poopybutthole">Poopybutthole
           <br>
-          <input type="checkbox" name="Species" value="5">Unknown
+          <input type="radio" name="species" value="unknown">Unknown
           <br>
+          <input type="radio" name="species" value="">All
+          <br>
+
+          <h4 id="radioButtonsStatus">STATUS</h4>
+          <input type="radio" name="status" value="alive">Alive
+          <br>
+          <input type="radio" name="status" value="dead">Dead
+          <br>
+          <input type="radio" name="status" value="unknown">Unknown
+          <br>
+          <input type="radio" name="status" value="">All
+          <br>
+
+          <h4 id="radioButtonsGender">GENDER</h4>
+          <input type="radio" name="gender" value="female">Female
+          <br>
+          <input type="radio" name="gender" value="male">Male
+          <br>
+          <input type="radio" name="gender" value="genderless">Genderless
+          <br>
+          <input type="radio" name="gender" value="unknown">Unknown
+          <br>
+          <input type="radio" name="gender" value="">All
+          <br>
+
+          <button type="submit" id="filterButton">FILTRAR</button>
+        </section>
+          </form>
+
           <h2>SORT BY</h2>
           <button type="button" id="sortAsc">A-Z</button>
           <button type="button" id="sortDesc">Z-A</button>
-        </section>
+
       </section>
-      <section id="resultItems" class="items">        
+      <section id="resultItems" class="items">
       </section>
     </section>
-    
+
 
 
     <footer>

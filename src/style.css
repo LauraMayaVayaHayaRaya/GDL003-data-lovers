@@ -94,7 +94,7 @@ footer section{
 #result{
 	display: none;
 }
-.checkboxes{
+.radioButtons{
 	color: white;
+  display:block;
 }
-
