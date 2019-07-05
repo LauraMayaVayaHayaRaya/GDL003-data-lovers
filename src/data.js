@@ -26,5 +26,4 @@ const sort = (key, order='asc') => {
   };
 },
 
-
 window.sort=sort

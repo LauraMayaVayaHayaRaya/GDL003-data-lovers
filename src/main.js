@@ -1,14 +1,12 @@
 const showList=(results=false)=>{
-  console.log(results);
   if(results){
     RICKANDMORTY.results=results;
   }
   document.getElementById("categories").style.display="none";
 
-document.getElementById("resultItems").innerHTML=''
+document.getElementById("resultItems").innerHTML='';
   Object.keys(RICKANDMORTY.results).forEach(function(item){
     let character=RICKANDMORTY.results[item];
-    console.log(RICKANDMORTY.results);
     let htmlElement=document.createElement('section');
     htmlElement.className='category';
 
@@ -36,8 +34,6 @@ const sortList=(order='asc')=>{
 document.getElementById('sortAsc').addEventListener('click',function(){sortList()});
 document.getElementById('sortDesc').addEventListener('click',function(){sortList('desc')});
 
-
-
 /*//FILTRADO DE CATEGORIAS
 
   const filterData = () => {
@@ -62,5 +58,5 @@ document.getElementById('sortDesc').addEventListener('click',function(){sortList
     }, false);
   }
 
-  */
+
   document.getElementById("filterButton").addEventListener("click", filterData);
