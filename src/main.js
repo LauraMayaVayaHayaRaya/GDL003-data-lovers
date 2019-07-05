@@ -43,8 +43,3 @@ document.getElementById('sortDesc').addEventListener('click',function(){sortList
 
   };
   document.getElementById("filterButton").addEventListener("click", filterData);
-
-
-
-
-
