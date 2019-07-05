@@ -34,17 +34,29 @@ const sortList=(order='asc')=>{
 document.getElementById('sortAsc').addEventListener('click',function(){sortList()});
 document.getElementById('sortDesc').addEventListener('click',function(){sortList('desc')});
 
+/*//FILTRADO DE CATEGORIAS
 
   const filterData = () => {
-    let characters=RICKANDMORTY.results;
-    let specie=document.querySelectorAll("input[name=species]:checked")[0].value;
-    let results=filter(characters,specie);
-    showList(results);
+    let radioForm = document.getElementById("filterFormHtml");
+    radioForm.addEventListener("submit", function(event) {
+      //  let checked = document.getElementsByTagName("radio")
+      let data = new FormData(radioForm);
 
-  };
+      let radioValue = "";
+      for (const entry of data) {
+        radioValue = entry[1];
+      };
+      let rickandmortylist = RICKANDMORTY.results;
+      let filtered = rickandmortylist.filter(function(el) {
+          return el.species == radioValue;
+        }
+      )
+      console.log(filtered);
+
+      showList(filtered);
+      event.preventDefault();
+    }, false);
+  }
+
+
   document.getElementById("filterButton").addEventListener("click", filterData);
-
-
-
-
-
