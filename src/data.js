@@ -33,3 +33,4 @@ const filter =(results,specie)=>{
 
 window.sort=sort;
 window.filter=filter;
+
