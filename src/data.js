@@ -24,5 +24,5 @@ const sort = (key, order='asc') => {
       (comparison * -1) : comparison
     );
   };
-
+}
 window.sort=sort
