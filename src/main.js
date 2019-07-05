@@ -11,7 +11,7 @@ document.getElementById("resultItems").innerHTML='';
     htmlElement.className='category';
 
     htmlElement.innerHTML='<a href="#characters">'+character.name+'</a><img src="'+character.image+'">';
-    document.getElementById("resultItems").appendChild(htmlElement);  
+    document.getElementById("resultItems").appendChild(htmlElement);
 
   });
   document.getElementById("result").style.display="block";
