@@ -68,6 +68,9 @@ document.getElementById('sortDesc').addEventListener('click',function(){sortList
         })
 
       console.log(filtered);
+
+      showList(filtered);
+      //  showList(RICKANDMORTY.results);
       event.preventDefault();
     }, false);
 
