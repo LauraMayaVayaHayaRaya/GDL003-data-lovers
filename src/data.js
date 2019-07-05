@@ -24,5 +24,12 @@ const sort = (key, order='asc') => {
       (comparison * -1) : comparison
     );
   };
+};
 
-window.sort=sort
+const filter =(results,specie)=>{
+  let characters=results.filter(character => character.species == specie);
+  return characters;
+}
+
+window.sort=sort;
+window.filter=filter;
