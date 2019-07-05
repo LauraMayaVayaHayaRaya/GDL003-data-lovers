@@ -13,7 +13,7 @@ document.getElementById("resultItems").innerHTML=''
     htmlElement.className='category';
 
     htmlElement.innerHTML='<a href="#characters">'+character.name+'</a><img src="'+character.image+'">';
-    document.getElementById("resultItems").appendChild(htmlElement);  
+    document.getElementById("resultItems").appendChild(htmlElement);
 
   });
   document.getElementById("result").style.display="block";
@@ -59,8 +59,15 @@ document.getElementById('sortDesc').addEventListener('click',function(){sortList
       for (const entry of data) {
         radioValue = entry[1];
       };
-      
+      let rickandmortylist = RICKANDMORTY.results;
+      console.log (rickandmortylist);
       console.log(radioValue);
+
+      let filtered = rickandmortylist.filter(function(el) {
+          return el.species == radioValue;
+        })
+
+      console.log(filtered);
       event.preventDefault();
     }, false);
 
