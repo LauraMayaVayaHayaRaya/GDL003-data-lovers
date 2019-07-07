@@ -24,7 +24,7 @@ const sort = (key, order='asc') => {
       (comparison * -1) : comparison
     );
   };
-},
+}
 
 const filter =(results,specie)=>{
   let characters=results.filter(character => character.species == specie);
