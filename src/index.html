@@ -6,6 +6,8 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+
+    <! HEADER, SECCIÓN PERMANENTE>
     <header>
       <section class="header1">
           <img class="logo" src="img/rym-logo.png" alt="rick and morty logo">
@@ -27,33 +29,48 @@
       </form>
     </nav>
 
+
+    <! PANTALLA HOME>
     <section id="categories" class="categories">
+
       <section id="characters" class="category">
         <a href="#characters">CHARACTERS</a>
         <img src="img/species-main.png">
       </section>
+
       <section id="locations" class="category"> <!--Asignar ID segun la categoria que elijamos-->
           <a href="#locations">LOCATIONS</a>
           <img src="img/genders-main.png">
       </section>
+
       <section class="category"> <!--Asignar ID segun la categoria que elijamos-->
           <a href="#episodes">EPISODES</a>
           <img src="img/origins-main.png">
-
       </section>
+
     </section>
+
+
+
+<! ELEMENTOS DE PANTALLA CHARACTERS>
 
     <section id="result" class="categories">
     <section class="info">
         <h2>CHARACTERS</h2>
 
         <p>There are 394 characters</p>
+
+       <! por usabilidad, se deja el menú sort antes del formulario>
+        <h2>SORT BY</h2>
+        <button type="button" id="sortAsc">A-Z</button>
+        <button type="button" id="sortDesc">Z-A</button>
+
+
+        <! SECCIÓN DE FORMULARIO RADIOBUTTONS>
         <section class="radioButtons" name="radioButtons">
         <form id="filterFormHtml" autocomplete="off">
 
-
           <h2>FILTER BY</h2>
-
 
           <h4 id="radioButtonsSpecies">SPECIES</h4>
           <input type="radio" name="species" value="Human">Human
@@ -106,24 +123,30 @@
           <br>
 
           <button type="button" id="filterButton">FILTRAR</button>
-        </section>
+      <!se cierra el form antes del section del formulario>
           </form>
+        </section>
 
-          <h2>SORT BY</h2>
-          <button type="button" id="sortAsc">A-Z</button>
-          <button type="button" id="sortDesc">Z-A</button>
-
+          <! cierre de section class info >
       </section>
+
+
       <section id="resultItems" class="items">
       </section>
+
     </section>
 
+
+    <!FOOTER, SECCIÓN PERMANENTE>
     <footer>
       <section>
         Información
         Blablabla
       </section>
     </footer>
+
+
+
 
     <script src="data/rickandmorty/rickandmorty.js"></script>
     <script src="data.js"></script>
