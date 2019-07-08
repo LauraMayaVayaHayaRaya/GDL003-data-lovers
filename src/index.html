@@ -48,7 +48,7 @@
         <img src="img/origins-main.png">
       </section>
 
-      <section class="category">
+      <section id="statisticsButtonImg" class="category">
         <a href="#statistics">STATISTICS</a>
         <img src="img/statistics-main.png">
       </section>
@@ -60,12 +60,12 @@
 
     <section id="result" class="categories">
     <section class="info">
-        <h2>CHARACTERS</h2>
+        <h1 id="titleCharacters">CHARACTERS</h1>
 
-        <p>There are 394 characters</p>
+        <p>There are 493 characters</p>
 
        <! por usabilidad, se deja el menú sort antes del formulario>
-        <h2>SORT BY</h2>
+        <h2 id="titleSort">SORT BY</h2>
         <button type="button" id="sortAsc">A-Z</button>
         <button type="button" id="sortDesc">Z-A</button>
 
@@ -74,7 +74,7 @@
         <section class="radioButtons" name="radioButtons">
         <form id="filterFormHtml" autocomplete="off">
 
-          <h2>FILTER BY</h2>
+          <h2 id="titleFilter">FILTER BY</h2>
 
           <h4 id="radioButtonsSpecies">SPECIES</h4>
           <input type="radio" name="species" value="Human">Human
@@ -89,7 +89,7 @@
           <br>
           <input type="radio" name="species" value="Vampire">Vampire
           <br>
-          <input type="radio" name="species" value="Cronemberg">Cronemberg
+          <input type="radio" name="species" value="Cronenberg">Cronenberg
           <br>
           <input type="radio" name="species" value="Parasite">Parasite
           <br>
@@ -126,7 +126,8 @@
           <input type="radio" name="gender" value="">All
           <br>
 
-          <button type="button" id="filterButton">FILTRAR</button>
+          <button type="button" id="filterButton">FILTER</button>
+          <button type="button" id="statsButton">CALCULATE</button>
       <!se cierra el form antes del section del formulario>
           </form>
         </section>
@@ -136,19 +137,23 @@
 
 
       <section id="resultItems" class="items">
+        <section id=statisticsLines>
+          <br>
+        </section>
+        <h2 id=totalStats></h2>
+          <br>
+        <h2 id=percentageStats></h2>
       </section>
 
     </section> <!CIERRE DE PANTALLA CHARACTERS>
 
 
-<!
-    <section id="statisticsSection" class="statistics">
-      <h2>STATISTICS</h2>
+<!PANTALLA DE ESTADÍSTICAS>
+<aside id="statisticsSection" class="statisticsSection">
+  <h2>STATISTICS</h2>
+  <h3>blaaaaaaaaaaaaaaaaaa</h3>
 
-
-
-    </section>
-
+</aside>
 
     <!FOOTER, SECCIÓN PERMANENTE>
     <footer>
