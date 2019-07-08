@@ -66,6 +66,7 @@ body{
 }
 .search input{
 	margin-left: 50px;
+	width: 200px;
 }
 footer{
   align-self: flex-end;
