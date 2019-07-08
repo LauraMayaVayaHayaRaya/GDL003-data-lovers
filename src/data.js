@@ -24,12 +24,22 @@ const sort = (key, order='asc') => {
       (comparison * -1) : comparison
     );
   };
-}
+
+};
+
 
 const filter =(results,specie)=>{
   let characters=results.filter(character => character.species == specie);
   return characters;
-};
+}
+
+
+const calcStats = (results, specie) => {
+  let totalCharacters = results.character.length;
+  console.log(totalCharacters);
+}
+
 
 window.sort=sort;
-window.filter=filter;
+window.filter =filter;
+window.calcStats = calcStats;
