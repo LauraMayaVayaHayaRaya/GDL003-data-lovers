@@ -33,6 +33,12 @@ const filter =(results,specie)=>{
 }
 
 
+const calcStats = (results, specie) => {
+  let totalCharacters = results.character.length;
+  console.log(totalCharacters);
+}
+
 
 window.sort=sort;
 window.filter =filter;
+window.calcStats = calcStats;

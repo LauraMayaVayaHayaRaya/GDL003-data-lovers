@@ -6,6 +6,11 @@ h1{
 	color: white;
 	font-family:'B612 Mono', monospace; font-size: 35px;
 }
+
+h2{
+  color: white;
+}
+
 .logo,.slogan{
 	display: inline-block;
 }
@@ -98,4 +103,12 @@ footer section{
 	color: white;
   display:block;
 	text-align: left;
+}
+
+.statisticsSection{
+  color: white;
+  display: none;
+}
+#statsButton{
+  display: none;
 }
