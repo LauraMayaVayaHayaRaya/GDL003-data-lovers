@@ -34,7 +34,7 @@ document.getElementById("homeButton").addEventListener("click", showHome);
 
 
 const sortList=(order='asc')=>{
-  RICKANDMORTY.results.sort(sort('name',order));
+  RICKANDMORTY.results.sort(window.sort('name',order));
   showList(RICKANDMORTY.results);
 };
 document.getElementById('sortAsc').addEventListener('click',function(){sortList()});
@@ -44,7 +44,7 @@ document.getElementById('sortDesc').addEventListener('click',function(){sortList
   const filterData = () => {
     let characters=RICKANDMORTY.results;
     let specie=document.querySelectorAll("input[name=species]:checked")[0].value;
-    let results=filter(characters,specie);
+    let results=window.filter(characters,specie);
     showList(results);
   };
   document.getElementById("filterButton").addEventListener("click", filterData);
